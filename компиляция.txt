@@ -1,0 +1,11 @@
+активация kivy_venv
+kivy_venv\Scripts\activate
+
+генерация requirements.txt
+pip freeze > requirements.txt
+
+
+компиляция в .exe
+python -m PyInstaller --onefile --name TimeMachine --icon TimeMachine.ico main.py
+
+python -m PyInstaller TimeMachine.spec 
