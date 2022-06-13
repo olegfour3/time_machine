@@ -5,7 +5,9 @@ kivy_venv\Scripts\activate
 pip freeze > requirements.txt
 
 
-компиляция в .exe
+Инициализация .spec файла
 python -m PyInstaller --onefile --name TimeMachine --icon TimeMachine.ico main.py
 
+компиляция в .exe
+в TimeMachine.spec необходимо исправить пути на свои
 python -m PyInstaller TimeMachine.spec 
